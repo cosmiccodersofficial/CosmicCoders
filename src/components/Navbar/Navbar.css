@@ -1,0 +1,17 @@
+.bg-gradient-to-r {
+    background: linear-gradient(to right, teal 500, blue 500);
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .hover:text-gray-200 {
+    &:hover {
+      color: gray 200;
+    }
+  }
