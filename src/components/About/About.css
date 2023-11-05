@@ -1,0 +1,7 @@
+.color{
+    
+    background-color: #f1f1f1;
+}
+.animate-spin {
+    animation: spin 3s linear infinite;
+}
