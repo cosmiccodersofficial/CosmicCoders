@@ -6,10 +6,10 @@ const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(200 - Math.random() * 100);
   // eslint-disable-next-line no-unused-vars
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Deep Down Into Cosmos of Coding", "Where Learning Begins", "One Stop Solution for Community based learning"  ];
+  const toRotate = [ "Deep Down Into Cosmos of Coding!", "Where Learning Begins!!", "One Stop Solution For Community Based Learning!"  ];
   const period = 1000;
 
   useEffect(() => {
@@ -39,7 +39,7 @@ const Home = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(250);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -47,9 +47,9 @@ const Home = () => {
   return (
     <div className='home'>
         <img src={cc} alt=''/>
-        <div className='hometext flex absolute mt-5 pt-3'>
-            <h1 className='text-7xl font-bold text-gray-100 mt-5 pt-5'> 
-              <span className="txt-rotate" data-period="1000" data-rotate='[ "Deep Down Into Cosmos of Coding", "Where Learning Begins", "One Stop Solution for Community based learning" ]'>
+        <div className='hometext blinking-color right-100 top-100 absolute m-5 pt-5'>
+            <h1 className='text-7xl flex flex-wrap font-bold  m-5 pt-5'> 
+              <span className="txt-rotate break-words m-5 text-" data-period="1000" data-rotate='[ "Deep Down Into Cosmos of Coding", "Where Learning Begins", "One Stop Solution for Community based learning" ]'>
                 {text}
               </span>
             </h1>

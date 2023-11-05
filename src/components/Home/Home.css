@@ -16,3 +16,33 @@ img{
     height: 100%;
 
 }
+@keyframes blink-color {
+  0% {
+    color: rgb(253 186 116);
+  }
+  50% {
+    color: rgb(251 146 60); 
+  }
+  100% {
+    color: rgb(253 186 116);  
+  }
+}
+
+.blinking-color {
+  animation: blink-color 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking {
+  animation: blink 2s infinite;
+}
