@@ -52,8 +52,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-
-
-
-// className="cursor-pointer rounded-full p-4 transition duration-300 lg:py-3.5 lg:px-6 bg-gray-50 bg-opacity-60 hover:bg-opacity-80 backdrop-blur text-gray-900"
