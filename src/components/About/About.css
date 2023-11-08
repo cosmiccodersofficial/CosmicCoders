@@ -5,3 +5,17 @@
 .animate-spin {
     animation: spin 5s linear infinite;
 }
+.color1{
+    background-color: #e3e5f4;
+}
+.color2{
+    background-color: #fef7e2;
+}
+.color3{
+    background-color: #eee8fc;
+}
+.hover:hover{
+    transform: scale(1.006);
+}
+
+
