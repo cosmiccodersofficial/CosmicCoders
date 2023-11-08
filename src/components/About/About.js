@@ -6,17 +6,17 @@ const About = () => {
     return (
         <>
             <div className="bg-gray-50">
-                <div className="flex justify-center items-center">
+                <div className="cursor-pointer flex justify-center items-center">
                     <img src={CCLogo} alt="" className="animate-spin mt-20 w-80 h-80 rounded-full" />
                 </div>
                 <div className='mx-24 mt-20 pb-44 content text-xl text-start'>
                     <p className='text-5xl font-bold text-center'>
-                        <span className='text-gray-800'>Welcome to</span> <span className='text-red-400'>Cosmic Coders</span>
+                        <span className='text-gray-800'>Welcome to</span> <span className='text-blue-900 cursor-pointer'>Cosmic Coders</span>
                     </p>
                     <p className='text-2xl mt-12'>
-                        At <span className='text-red-400 font-semibold'>Cosmic Coders</span>, we are more than just a society. We are a thriving community dedicated to empowering students and enthusiasts in the ever-evolving realm of computing. Our mission is to ignite a passion for information technology beyond the confines of traditional coursework.
+                        At <span className='text-blue-900 cursor-pointer font-semibold'>Cosmic Coders</span>, we are more than just a society. We are a thriving community dedicated to empowering students and enthusiasts in the ever-evolving realm of computing. Our mission is to ignite a passion for information technology beyond the confines of traditional coursework.
                     </p>
-                    <div className='color1 hover rounded-3xl p-12 mt-12 shadow-lg'>
+                    <div className='color1 cursor-pointer hover rounded-3xl p-12 mt-12 shadow-lg'>
                         <p className='font-bold text-3xl text-gray-600'>
                             Why Join Us?
                         </p>
@@ -30,7 +30,7 @@ const About = () => {
                             <span className='font-bold'> <span className='text-4xl'>💡</span> Unleash Your Creativity:</span> At Cosmic Coders, we encourage innovation and creativity. Our technical events include programming contests, technical quizzes, interactive discussions, and more. These activities not only challenge your skills but also spark your imagination.
                         </p>
                     </div>
-                    <div className='color2 hover rounded-3xl p-12 mt-12 shadow-lg'>
+                    <div className='color2 cursor-pointer hover rounded-3xl p-12 mt-12 shadow-lg'>
                         <p className='font-bold text-3xl text-gray-600'>
                             Who Can Join?
                         </p>
@@ -38,7 +38,7 @@ const About = () => {
                             We extend a warm welcome to students from all undergraduate and graduate programs who share a common interest in the world of development. Whether you're a coding enthusiast, a tech visionary, or someone looking to make a difference through technology, you'll find your place in our community.
                         </p>
                     </div>
-                    <div className='color3 hover rounded-3xl p-12 mt-12 shadow-lg'>
+                    <div className='color3 cursor-pointer hover rounded-3xl p-12 mt-12 shadow-lg'>
                         <p className='font-bold text-3xl text-gray-600'>
                             Why Choose Us?
                         </p>
@@ -57,7 +57,7 @@ const About = () => {
                     </div>
 
                     <p className='text-2xl mt-12'>
-                        At <span className='text-red-400 font-semibold'>Cosmic Coders</span>, we are more than just a club, we are a launchpad for your journey in the world of computing. Join us today and embark on an exciting adventure of learning, innovation, and growth.
+                        At <span className='text-blue-900 font-semibold'>Cosmic Coders</span>, we are more than just a club, we are a launchpad for your journey in the world of computing. Join us today and embark on an exciting adventure of learning, innovation, and growth.
                     </p>
                 </div>
             </div>

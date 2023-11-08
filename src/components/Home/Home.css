@@ -13,13 +13,13 @@ img{
 }
 @keyframes blink-color {
   0% {
-    color: rgb(253 186 116);
+    color: #dbeafe; 
   }
   50% {
-    color: rgb(251 146 60); 
+    color: #dbeafe; 
   }
   100% {
-    color: rgb(253 186 116);  
+    color: #dbeafe;  
   }
 }
 
@@ -41,3 +41,6 @@ img{
 .blinking {
   animation: blink 2s infinite;
 }
+
+
+/* rgb(253 186 116); */
