@@ -6,7 +6,7 @@ const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(200 - Math.random() * 100);
+  const [delta, setDelta] = useState(150 - Math.random() * 100);
   // eslint-disable-next-line no-unused-vars
   const [index, setIndex] = useState(1);
   const toRotate = [ "Deep Down Into Cosmos of Coding!", "Where Learning Begins!!", "One Stop Solution For Community Based Learning!"  ];
@@ -39,7 +39,7 @@ const Home = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(250);
+      setDelta(200);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }

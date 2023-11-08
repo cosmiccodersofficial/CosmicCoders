@@ -9,6 +9,10 @@
   .text-white {
     color: white;
   }
+
+  .navcolor{
+    background-color: #9f9fa0;
+  }
   
   .hover:text-gray-200 {
     &:hover {

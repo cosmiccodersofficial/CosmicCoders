@@ -5,7 +5,7 @@ import CCLogo from '../../images/CCLogo.png';
 const About = () => {
     return (
         <>
-            <div className="bg-gray-300">
+            <div className="bg-gray-50">
                 <div className="flex justify-center items-center">
                     <img src={CCLogo} alt="" className="animate-spin mt-20 w-80 h-80 rounded-full" />
                 </div>
@@ -14,7 +14,7 @@ const About = () => {
                         <span className='text-gray-800'>Welcome to</span> <span className='text-red-400'>Cosmic Coders</span>
                     </p>
                     <p className='text-2xl mt-12'>
-                        At <span className='text-red-400'>Cosmic Coders</span>, we are more than just a society. We are a thriving community dedicated to empowering students and enthusiasts in the ever-evolving realm of computing. Our mission is to ignite a passion for information technology beyond the confines of traditional coursework.
+                        At <span className='text-red-400 font-semibold'>Cosmic Coders</span>, we are more than just a society. We are a thriving community dedicated to empowering students and enthusiasts in the ever-evolving realm of computing. Our mission is to ignite a passion for information technology beyond the confines of traditional coursework.
                     </p>
                     <p className='font-bold text-3xl mt-12 text-gray-600'>
                         Why Join Us?
@@ -51,7 +51,7 @@ const About = () => {
                     </p>
 
                     <p className='text-2xl mt-12'>
-                        At <span className='text-red-400'>Cosmic Coders</span>, we are more than just a club, we are a launchpad for your journey in the world of computing. Join us today and embark on an exciting adventure of learning, innovation, and growth.
+                        At <span className='text-red-400 font-semibold'>Cosmic Coders</span>, we are more than just a club, we are a launchpad for your journey in the world of computing. Join us today and embark on an exciting adventure of learning, innovation, and growth.
                     </p>
                 </div>
             </div>
