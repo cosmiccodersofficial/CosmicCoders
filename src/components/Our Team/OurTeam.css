@@ -1,5 +1,5 @@
 .hover:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .color {
@@ -56,19 +56,3 @@
 .animate-slide-in-from-bottom {
     animation: slideInFromBottom 1s ease-out;
 }
-
-@keyframes zigzag {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    25%, 75% {
-      transform: translateX(20px);
-    }
-    50% {
-      transform: translateX(-20px);
-    }
-  }
-  
-  .animate-zigzag {
-    animation: zigzag 1s linear infinite;
-  }
