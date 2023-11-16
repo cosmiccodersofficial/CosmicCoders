@@ -57,7 +57,7 @@ const OurTeam = () => {
                 </div>
             </div>
             {/* Second Row */}
-            <div className="flex justify-center items-center mt-12 mb-12 pb-12">
+            <div className="flex justify-center items-center mt-12 mb-12">
                 <div className="p-4 mr-20">
                     <img src={ayushi} alt="" className="w-56 h-56 rounded-full hover cursor-pointer" />
                     <h1 className='animate-slide-in text-2xl mt-4'>Ayushi Abrol
