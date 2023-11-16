@@ -28,8 +28,8 @@ const OurTeam = () => {
                             </svg>
                         </a>
                     </h1>
-                    <h1 className='animate-slide-in text-xl'>Co-Founder</h1>
-                    <h1 className='animate-slide-in text-xl'>and Executive Head</h1>
+                    <h1 className='animate-slide-in text-xl'>Co-Founder &</h1>
+                    <h1 className='animate-slide-in text-xl'>Executive Head</h1>
                 </div>
                 <div className="p-4 m-2">
                     <img src={archit} alt="" className="w-56 h-56 rounded-full hover cursor-pointer" />
@@ -40,8 +40,8 @@ const OurTeam = () => {
                             </svg>
                         </a>
                     </h1>
-                    <h1 className='animate-slide-in-from-right text-xl'>Co-Founder</h1>
-                    <h1 className='animate-slide-in-from-right text-xl'>and Promotional Head</h1>
+                    <h1 className='animate-slide-in-from-right text-xl'>Co-Founder &</h1>
+                    <h1 className='animate-slide-in-from-right text-xl'>Promotional Head</h1>
                 </div>
                 <div className="p-4 ml-20">
                     <img src={manas} alt="" className="w-56 h-56 rounded-full hover cursor-pointer" />
@@ -52,8 +52,8 @@ const OurTeam = () => {
                             </svg>
                         </a>
                     </h1>
-                    <h1 className='animate-slide-in-from-right text-xl'>Co-Founder</h1>
-                    <h1 className='animate-slide-in-from-right text-xl'>and Tech Head</h1>
+                    <h1 className='animate-slide-in-from-right text-xl'>Co-Founder &</h1>
+                    <h1 className='animate-slide-in-from-right text-xl'>Tech Head</h1>
                 </div>
             </div>
             {/* Second Row */}
@@ -92,7 +92,7 @@ const OurTeam = () => {
                             </svg>
                         </a>
                     </h1>
-                    <h1 className='animate-slide-in-from-right text-xl'>Operations and</h1>
+                    <h1 className='animate-slide-in-from-right text-xl'>Operations &</h1>
                     <h1 className='animate-slide-in-from-right text-xl'>Event Coordinator</h1>
                 </div>
             </div>
@@ -107,7 +107,7 @@ const OurTeam = () => {
                             </svg>
                         </a>
                     </h1>
-                    <h1 className='animate-slide-in text-xl'>Operational Head</h1>
+                    <h1 className='animate-slide-in text-xl'>YouTube Partner</h1>
                 </div>
             </div>
         </div >
