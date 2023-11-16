@@ -1,3 +1,58 @@
-.image{
-    background-image: url('../../images/Our Team.png');
+.hover:hover {
+    transform: scale(1.02);
+}
+
+.color {
+    background-color: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-from-right {
+    animation: slideInFromRight 1s ease-out;
+}
+
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-from-bottom {
+    animation: slideInFromBottom 1s ease-out;
 }
