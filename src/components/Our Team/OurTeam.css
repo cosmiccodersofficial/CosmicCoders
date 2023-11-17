@@ -5,7 +5,13 @@
 .color {
     background-color: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
 }
-
+.icon-color {
+    color: #0072b1;
+}
+.animate:hover .icon-color{
+    transform: translateX(9px); /* Move the arrow 5px to the right */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
 
 @keyframes slideIn {
     from {
