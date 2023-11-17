@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-//  bg-gradient-to-r from-teal-500 to-blue-500 
+
+
+
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
 
