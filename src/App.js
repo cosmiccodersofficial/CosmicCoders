@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
@@ -14,7 +15,7 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/about" element={<About/>}/>
           <Route exact path="/ourteam" element={<OurTeam/>}/>
-          
+          <Route exact path="/contact" element={<Contact/>}/>
         </Routes>
         <Footer/>
     </div>
