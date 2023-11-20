@@ -10,13 +10,13 @@ const JoinUs = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <div className="bg-gray-50 p-8">
+        <div className="bg-gray-50 p-8 mb-24">
             <h2 className="text-6xl font-bold mb-6 mt-28 text-blue-900 contact-heading">Join Our Network</h2>
             <p className='text-2xl m-12'>We are more than just a club, we are a launchpad for your journey in the world of computing. Join us today and embark on an exciting adventure of learning, innovation, and growth</p>
             {/* First Row */}
             <div className="flex flex-col md:flex-row mr-2 ml-2">
                 {/* First Column */}
-                <div className="md:w-1/2 md:mr-4 mb-4 animate-slide-in hover">
+                <div className="cursor-pointer md:w-1/2 md:mr-4 mb-4 animate-slide-in hover">
                     <div className="p-8 rounded-md bg-green-300 ml-12 mr-12 flex items-center justify-between">
                         {/* Content for the first column of the first row */}
                         <div className="mb-4 md:mb-0 text-center md:text-left">
@@ -34,7 +34,7 @@ const JoinUs = () => {
                 </div>
 
                 {/* Second Column */}
-                <div className="md:w-1/2 md:mr-4 mb-4 animate-slide-in-from-right hover">
+                <div className="cursor-pointer md:w-1/2 md:mr-4 mb-4 animate-slide-in-from-right hover">
                     <div className="p-8 rounded-md bg-red-300 ml-12 mr-12 flex items-center justify-between">
                         {/* Content for the first column of the second row */}
                         <div className="mb-4 md:mb-0 text-center md:text-left">
@@ -55,7 +55,7 @@ const JoinUs = () => {
             {/* Second Row */}
             <div className="flex flex-col md:flex-row mr-2 ml-2">
                 {/* First Column */}
-                <div className="md:w-1/2 md:mr-4 mb-4 animate-slide-in hover">
+                <div className="cursor-pointer md:w-1/2 md:mr-4 mb-4 animate-slide-in hover">
                     <div className="p-8 rounded-md bg-blue-400 ml-12 mr-12 flex items-center justify-between">
                         {/* Content for the first column of the second row */}
                         <div className="mb-4 md:mb-0 text-center md:text-left">
@@ -73,7 +73,7 @@ const JoinUs = () => {
                 </div>
 
                 {/* Second Column */}
-                <div className="md:w-1/2 md:mr-4 mb-4 animate-slide-in-from-right hover">
+                <div className="cursor-pointer md:w-1/2 md:mr-4 mb-4 animate-slide-in-from-right hover">
                     <div className="p-8 rounded-md bg-blue-300 ml-12 mr-12 flex items-center justify-between">
                         {/* Content for the first column of the second row */}
                         <div className="mb-4 md:mb-0 text-center md:text-left">
@@ -94,7 +94,7 @@ const JoinUs = () => {
             {/* Third Row */}
             <div className="flex flex-col md:flex-row mr-2 ml-2">
                 {/* First Column */}
-                <div className="md:w-1/2 md:mr-4 mb-4 animate-slide-in hover">
+                <div className="cursor-pointer md:w-1/2 md:mr-4 mb-4 animate-slide-in hover">
                     <div className="p-8 rounded-md bg-gray-300 ml-12 mr-12 flex items-center justify-between">
                         {/* Content for the first column of the first row */}
                         <div className="mb-4 md:mb-0 text-center md:text-left">
@@ -112,7 +112,7 @@ const JoinUs = () => {
                 </div>
 
                 {/* Second Column */}
-                <div className="md:w-1/2 md:mr-4 mb-4 animate-slide-in-from-right hover">
+                <div className="cursor-pointer md:w-1/2 md:mr-4 mb-4 animate-slide-in-from-right hover">
                     <div className="p-8 rounded-md bg-purple-200 ml-12 mr-12 flex items-center justify-between">
                         {/* Content for the first column of the second row */}
                         <div className="mb-4 md:mb-0 text-center md:text-left">

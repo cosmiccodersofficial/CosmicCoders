@@ -17,7 +17,7 @@ const OurTeam = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <div className="bg-gray-200 p-8">
+        <div className="bg-gray-50 p-8">
             <h2 className="text-6xl p-6 font-bold mb-6 mt-28 text-blue-900 animate-slide-in-from-bottom contact-heading">Our Team</h2>
             {/* First Row */}
             <div className="flex flex-col md:flex-row mb-4 mr-20 ml-20">

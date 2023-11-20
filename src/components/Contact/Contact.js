@@ -47,11 +47,11 @@ const Contact = () => {
         {/* Submit and Reset Buttons */}
         <div className="flex justify-between mb-12">
           <button type="submit"
-            className="w-2/5 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+            className="w-2/5 bg-blue-800 hover text-white px-4 py-2 rounded-lg hover:bg-blue-900 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
             Submit
           </button>
           <button type="reset"
-            className="w-2/5 bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray active:bg-gray-600">
+            className="w-2/5 bg-gray-400 hover text-white px-4 py-2 rounded-lg hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray active:bg-gray-600">
             Reset
           </button>
         </div>
