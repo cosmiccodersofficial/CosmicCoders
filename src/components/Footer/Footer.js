@@ -16,15 +16,15 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/about" className="text-sm font-semibold font-medium hover:text-gray-400">About</Link>
-          <Link to="/contact" className="text-sm font-semibold font-medium hover:text-gray-400">Contact</Link>
-          <Link to="/terms" className="text-sm font-semibold font-medium hover:text-gray-400">Terms & Conditions</Link>
-          <Link to="/privacy" className="text-sm font-semibold font-medium hover:text-gray-400">Privacy Policy</Link>
+          <Link to="/about" className="text-sm hover font-semibold font-medium hover:text-gray-400">About</Link>
+          <Link to="/contact" className="text-sm hover font-semibold font-medium hover:text-gray-400">Contact</Link>
+          <Link to="/terms" className="text-sm hover font-semibold font-medium hover:text-gray-400">Terms & Conditions</Link>
+          <Link to="/privacy" className="text-sm hover font-semibold font-medium hover:text-gray-400">Privacy Policy</Link>
         </div>
 
         <div className="flex flex-col items-center mt-8">
           <p className="text-sm font-semibold font-medium">Follow us on social media:</p>
-          <div className="flex flex-row justify-center gap-4 mt-2">
+          <div className="flex flex-row justify-center gap-4 hover mt-2">
             <Link to="https://github.com/cosmiccodersofficial" target='_blank' className="text-white hover:text-gray-400"> 
                 <FontAwesomeIcon icon={faGithub}/> 
             </Link>
