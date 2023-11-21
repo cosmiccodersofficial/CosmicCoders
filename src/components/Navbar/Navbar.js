@@ -42,7 +42,7 @@ const Navbar = () => {
           </ul>
           
           <Link to="/join" className="text-white font-bold text-xl ">
-            <div className="cursor-pointer hover border-blue-500 bg-blue-900 hover:bg-blue-800 rounded-full sm:py-1 sm:px-3 md:py-2 md:px-4 lg:py-2.5 lg:px-6">
+            <div className="cursor-pointer shadow-lg hover border-blue-500 bg-blue-900 hover:bg-blue-800 rounded-full sm:py-1 sm:px-3 md:py-2 md:px-4 lg:py-2.5 lg:px-6">
               <span className="text-white font-bold text-lg">Join Us</span>
             </div>
           </Link>
