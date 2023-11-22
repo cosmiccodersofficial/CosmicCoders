@@ -14,4 +14,24 @@
     transform: scale(1.02);
 }
 
+.title{
+    opacity: 0;
+    animation: fadeIn 0.9s forwards;
+    animation-delay: 0.5s;
+}
 
+@keyframes fadeIn {
+    to {
+    opacity: 1;
+    }
+}
+
+#Section1 , #Section2, #Section3 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+#Section1.visible , #Section2.visible, #Section3.visible {
+    opacity: 1;
+}
