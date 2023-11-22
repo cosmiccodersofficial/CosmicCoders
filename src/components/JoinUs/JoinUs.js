@@ -117,7 +117,7 @@ const JoinUs = () => {
                         {/* Content for the first column of the second row */}
                         <div className="mb-4 md:mb-0 text-center md:text-left">
                             <h3 className="text-lg font-semibold mb-2 text-gray-800">Discord</h3>
-                            <Link to="https://discord.gg/RbA7nkun" target='_blank' rel='noopener noreferrer' className='text-lg animate font-semibold text-gray-800'>
+                            <Link to="https://discord.gg/Z96GhGB3zB" target='_blank' rel='noopener noreferrer' className='text-lg animate font-semibold text-gray-800'>
                                 Join Now <FontAwesomeIcon className='icon-color' icon={faCircleArrowRight} />
                             </Link>
                         </div>
