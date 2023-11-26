@@ -9,8 +9,8 @@ const Contact = () => {
   }, []);
   return (
     <div className="bg-gray-50 p-8 flex flex-col items-center contact-container">
-      <h2 className="text-6xl font-bold mb-6 mt-28 text-blue-900 contact-heading">Get In Touch</h2>
-      <form className="w-full contact-form">
+      <h2 className="text-5xl mt-28 mt-28 font-bold mb-6 text-blue-900 contact-heading">Get In Touch</h2>
+      <form className="w-full max-w-md contact-form">
         {/* Name Field */}
         <div className="mb-4">
           <label htmlFor="Name" className="block text-lg font-bold mb-2 text-start"> Name </label>
@@ -45,7 +45,7 @@ const Contact = () => {
         </div>
 
         {/* Submit and Reset Buttons */}
-        <div className="flex justify-between mb-12">
+        <div className="flex justify-between mb-12 form-buttons">
           <button type="submit"
             className="w-2/5 bg-blue-800 hover text-white px-4 py-2 rounded-lg hover:bg-blue-900 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
             Submit
