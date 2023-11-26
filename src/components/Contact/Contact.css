@@ -32,3 +32,23 @@
     transform: translateY(0);
     }
 }
+
+@media (min-width: 768px) {
+    .contact-heading {
+      font-size: 3rem;
+      margin-top: 7.5rem;
+    }
+  
+    .contact-form {
+      max-width: 600px;
+    }
+  
+    .form-buttons {
+      flex-direction: row;
+    }
+  
+    .form-buttons button {
+      margin-right: 0.5rem;
+      margin-bottom: 0;
+    }
+  }

@@ -11,7 +11,7 @@ const JoinUs = () => {
     }, []);
     return (
         <div className="bg-gray-50 p-8 mb-24">
-            <h2 className="text-6xl font-bold mb-6 mt-28 text-blue-900 contact-heading">Join Our Network</h2>
+            <h2 className="text-5xl font-bold mb-6 mt-28 text-blue-900 contact-heading">Join Our Network</h2>
             <p className='text-2xl m-12'>We are more than just a club, we are a launchpad for your journey in the world of computing. Join us today and embark on an exciting adventure of learning, innovation, and growth</p>
             {/* First Row */}
             <div className="flex flex-col md:flex-row mr-2 ml-2">
