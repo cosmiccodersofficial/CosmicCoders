@@ -2,7 +2,6 @@ import './App.css';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Test from './components/Footer/Test';
 import Home from './components/Home/Home';
 import JoinUs from './components/JoinUs/JoinUs';
 import Navbar from './components/Navbar/Navbar';
@@ -20,7 +19,7 @@ function App() {
           <Route exact path="/contact" element={<Contact/>}/>
           <Route exact path="/join" element={<JoinUs/>}/>
         </Routes>
-        <Test/>
+        <Footer/>
     </div>
   );
 }
