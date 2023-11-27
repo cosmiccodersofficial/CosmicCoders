@@ -1,6 +1,5 @@
 import './App.css';
 import About from './components/About/About';
-import Test from './components/About/test';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
@@ -15,7 +14,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/about" element={<Test/>}/>
+          <Route exact path="/about" element={<About/>}/>
           <Route exact path="/ourteam" element={<OurTeam/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
           <Route exact path="/join" element={<JoinUs/>}/>
