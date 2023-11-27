@@ -1,24 +1,44 @@
-.bg-gradient-to-r {
-    background: linear-gradient(to right, teal 500, blue 500);
-  }
-  
   .shadow-lg {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
   
-  .text-white {
-    color: white;
+  .navbar-brand{
+    top: 0;
+    z-index: 10;
+    font-weight: 650;
+    border-radius: 100px;
+
+    opacity: 0.5;
+    backdrop-filter: blur(64px);
+    transition-property: all;
+  }
+  .navbar-brand:hover{
+    opacity: 0.8;
+    transition-property: all;
+    transition-duration: 500 smooth;
   }
 
-  .navcolor{
-    background-color: #9f9fa0;
+
+  .nav-item{
+    opacity: 0.5;
+    backdrop-filter: blur(64px);
+    transition-property: all;
+    border-radius: 100px;
   }
-  
-  .hover:text-gray-200 {
-    &:hover {
-      color: gray 200;
-    }
+  .nav-item:hover{
+    opacity: 0.8;
+    transition-property: all;
+    transition-duration: 500 smooth;
   }
+
+  .nav-link:hover{
+    color: rgb(30 58 138);
+  }
+
+
+.btn:hover{
+  background-color: rgb(30 64 175);
+}
 
 
 @media (max-width: 768px) {

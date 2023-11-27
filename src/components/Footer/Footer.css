@@ -3,10 +3,7 @@
     height: 4rem;
 }
 
-.icon{
-    color: #fff;
-}
-.icon:hover{
+i:hover{
     color: #9ca3af;
 }
 

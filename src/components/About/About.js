@@ -29,7 +29,7 @@ const About = () => {
   }, [inView1, inView2, inView3]);
 
   return (
-    <Container fluid className="bg-gray-50">
+    <Container fluid className="bg-gray-50 mt-5">
       <Row>
         <Col>
           <img src={CCLogo} alt="" className="image animate-spin" />
@@ -39,7 +39,7 @@ const About = () => {
       <Container className="cont1">
         <Row>
           <Col>
-            <p className="p1 title">
+            <p className="p1 title mt-2">
               <span className="s1">Welcome to</span>{' '}
               <span className="s2">Cosmic Coders</span>
             </p>
