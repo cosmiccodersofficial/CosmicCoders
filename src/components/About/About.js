@@ -38,7 +38,7 @@ const About = () => {
                     <img src={CCLogo} alt="" className="animate-spin mt-20 w-80 h-80 rounded-full" />
                 </div>
                 <div  className={`mx-24 mt-20 pb-44 content text-xl text-start`}>
-                    <p className='text-5xl font-bold text-center title'>
+                    <p className='lg:text-5xl font-bold text-center heading title'>
                         <span className='text-gray-800'>Welcome to</span> <span className='text-blue-900 cursor-pointer'>Cosmic Coders</span>
                     </p>
                     <p className='text-2xl mt-12 title'>
