@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/Logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub, faTwitter, faYoutube, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
-
+import './Footer.css';
 
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
           <img src={logo} alt="Logo" className="cursor-pointer w-16 h-16 rounded-full" />
           <p className="text-sm font-semibold font-medium mt-2">© 2023 Cosmic Coders</p>
         </div>
-
+        
         <div className="flex flex-wrap justify-center gap-4">
           <Link to="/about" className="text-sm hover font-semibold font-medium hover:text-gray-400">About</Link>
           <Link to="/contact" className="text-sm hover font-semibold font-medium hover:text-gray-400">Contact</Link>
