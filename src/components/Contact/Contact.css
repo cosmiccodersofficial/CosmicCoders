@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(249 250 251);;
+}
+
 .contact-container {
     padding: 20px;
     opacity: 0;
@@ -12,19 +16,18 @@
 }
 
 .contact-heading {
+  font-size: 3.5rem;
     transform: translateY(-20px);
     transition: transform 0.8s ease-in-out;
 }
 
 .contact-form {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
     margin-top: 1.5rem;
     opacity: 0;
     animation: fadeIn 0.9s forwards;
     animation-delay: 0.7s;
 }
+
 
 @keyframes slideIn {
     to {
@@ -33,14 +36,14 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 374px) and (max-width: 767px) {
     .contact-heading {
       font-size: 3rem;
       margin-top: 7.5rem;
     }
   
     .contact-form {
-      max-width: 600px;
+      max-width: 700px;
     }
   
     .form-buttons {

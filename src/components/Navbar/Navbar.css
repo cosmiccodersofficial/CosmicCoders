@@ -40,6 +40,23 @@
   background-color: rgb(30 64 175);
 }
 
+.navbar-toggler span.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: 0.4s;
+}
+.navbar-toggler span.close-bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: 1s;
+}
+
 
 @media (max-width: 768px) {
   .navbar-links {
