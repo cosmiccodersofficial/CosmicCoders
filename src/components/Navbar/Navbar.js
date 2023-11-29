@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import './NavBar.css';
 
-
-
-const Navbar = () => {
-
+const NavBar = () => {
   const [visible, setVisible] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,34 +22,49 @@ const Navbar = () => {
     };
   }, []);
 
+
   return (
-    <div>
-      <nav className={`fixed top-0 w-full z-10 ${visible ? 'block' : 'hidden'}`}>
-        <div className="flex justify-between items-center px-6 py-2">
-          <div className="cursor-pointer hover shadow-sm backdrop-blur-lg bg-gray-400 bg-opacity-10 rounded-full p-4 transition duration-300 bg-opacity-70 text-gray-900">
-            <Link to="/" className="text-gray-900 font-bold text-xl "><span className='text-blue-900'>Cosmic</span> Coders</Link>
-          </div>
-
-          <ul className="flex gap-x-10 hover cursor-pointer shadow-sm backdrop-blur-lg bg-gray-400 bg-opacity-10 rounded-full p-4 transition duration-300 hover:bg-opacity-70 text-gray-900 me-5">
-            <li className='hover'>
-              <Link to="/" className="text-gray-900 font-bold hover:text-blue-800 flex items-center"><svg className="fill-current h-5 w-5 mr-2 bi bi-house-door-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" fill="black"></path> </svg>
+    <div className={`${visible ? 'block' : 'd-none'}`}>
+      <Navbar expanded={expanded} className={`fixed-top w-100 top-0 z-10 navbar`} expand="lg">
+        <Container className='d-flex justify-content-between align-items-center mx-8 py-2'>
+          <Navbar.Brand as={Link} to="/" 
+            className="cursor-pointer shadow bg-gray-400 p-3 text-gray-900 navbar-brand mx-auto">
+            <span className='text-blue-900'>Cosmic</span> Coders
+          </Navbar.Brand>
+          <Navbar.Toggle className={`border-0 bg-transparent p-2 navbar-toggler`} aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}>
+            <span className={`${!expanded ? 'bar' : 'd-none'}`}></span>
+            <span className={`${!expanded ? 'bar' : 'btn-close btn-close-dark'}`}></span>
+            <span className={`${!expanded ? 'bar' : 'd-none '}`}></span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav onClick={()=> setExpanded(false)}
+              className="cursor-pointer d-flex hover bg-gray-400 align-items-center column-gap-4 shadow nav-item p-2 mx-auto">
+              <Nav.Link as={Link} to="/" className="text-gray-900 fw-bold">
+                <svg className="fill-current h-5 w-5 me-2 bi bi-house-door-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" fill="black"></path>
+                </svg>
                 Home
-              </Link>
-            </li>
-            <li className='hover'><Link to="/about" className="text-gray-900 font-bold hover:text-blue-800">About</Link></li>
-            <li className='hover'><Link to="/ourteam" className="text-gray-900 font-bold hover:text-blue-800">Our Team</Link></li>
-            <li className='hover'><Link to="/contact" className="text-gray-900 font-bold hover:text-blue-800">Contact</Link></li>
-          </ul>
-          
-          <Link to="/join" className="text-light font-bold text-xl ">
-            <div className="cursor-pointer shadow-lg hover border-blue-500 bg-blue-900 hover:bg-blue-800 rounded-full sm:py-1 sm:px-3 md:py-2 md:px-4 lg:py-2.5 lg:px-6">
-              <span className="text-white font-bold text-lg">Join Us</span>
-            </div>
-          </Link>
-        </div>
-      </nav >
-    </div >
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about" className="text-gray-900 fw-bold"> About </Nav.Link>
+              <Nav.Link as={Link} to="/ourteam" className="text-gray-900 fw-bold"> Our Team </Nav.Link>
+              <Nav.Link as={Link} to="/contact" className="text-gray-900 fw-bold"> Contact </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+          <section>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className='ms-auto'>
+                <Link to="/join" className="text-light fw-bold">
+                  <div className="btn cursor-pointer shadow-lg hover text-xl w-100 bg-blue-900 rounded-pill ms-4">
+                    <span className="text-white fw-bold text-lg px-1">  Join Us </span>
+                  </div>
+                </Link>
+              </Nav>
+            </Navbar.Collapse>
+          </section>
+        </Container>
+      </Navbar>
+    </div>
   );
-}
+};
 
-export default Navbar;
+export default NavBar;
