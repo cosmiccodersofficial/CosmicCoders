@@ -1,0 +1,18 @@
+.logo-img{
+    width: 4rem;
+    height: 4rem;
+}
+
+i:hover{
+    color: #9ca3af;
+}
+
+.bg-dark{
+    background-color: rgb(17 24 39) !important;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .footer-links {
+        gap: 2;
+    }
+}

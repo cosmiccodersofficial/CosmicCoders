@@ -18,7 +18,7 @@ const OurTeam = () => {
     }, []);
     return (
         <div className="bg-gray-50 p-8">
-            <h2 className="text-5xl font-bold mb-6 mt-20 text-blue-900 contact-heading animate-fade">Our Team</h2>
+            <h2 className="text-5xl font-bold mb-6 mt-20 text-blue-900 team-heading animate-fade">Our Team</h2>
             {/* First Row */}
             <div className="flex flex-col md:flex-row mb-4 mr-20 ml-20">
                 {/* First Column */}

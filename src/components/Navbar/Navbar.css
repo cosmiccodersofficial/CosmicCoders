@@ -1,24 +1,61 @@
-.bg-gradient-to-r {
-    background: linear-gradient(to right, teal 500, blue 500);
-  }
-  
   .shadow-lg {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
   
-  .text-white {
-    color: white;
+  .navbar-brand{
+    top: 0;
+    z-index: 10;
+    font-weight: 650;
+    border-radius: 100px;
+
+    opacity: 0.8;
+    backdrop-filter: blur(64px);
+    transition-property: all;
+  }
+  .navbar-brand:hover{
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 500 smooth;
   }
 
-  .navcolor{
-    background-color: #9f9fa0;
+
+  .nav-item{
+    opacity: 0.8;
+    backdrop-filter: blur(64px);
+    transition-property: all;
+    border-radius: 100px;
   }
-  
-  .hover:text-gray-200 {
-    &:hover {
-      color: gray 200;
-    }
+  .nav-item:hover{
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 500 smooth;
   }
+
+  .nav-link:hover{
+    color: rgb(30 58 138);
+  }
+
+
+.btn:hover{
+  background-color: rgb(30 64 175);
+}
+
+.navbar-toggler span.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: 0.4s;
+}
+.navbar-toggler span.close-bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: 1s;
+}
 
 
 @media (max-width: 768px) {
