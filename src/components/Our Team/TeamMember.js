@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './OurTeam.css';
 
-const TeamMember = ({ name, role, linkedin, imageSrc }) => {
+const TeamMember = React.memo(({ name, role, linkedin, imageSrc }) => {
   return (
     <div className="p-5 rounded-md">
       <div className="d-flex flex-column align-items-center mb-4">
-        <img src={imageSrc} alt="" className="w-50 h-50 rounded-circle hover cursor-pointer" />
+        <img src={imageSrc} alt="" className="w-50 h-50 rounded-circle hover cursor-pointer" loading='lazy'/>
       </div>
       <h1 className='h2 mt-4 animate-fade'>{name}</h1>
       <h1 className='h5 animate-fade'>{role}</h1>
@@ -17,6 +17,6 @@ const TeamMember = ({ name, role, linkedin, imageSrc }) => {
       </Link>
     </div>
   );
-}
+});
 
 export default TeamMember;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import cc from '../../images/Cosmic Coders.png';
+import cc from '../../images/Cosmic Coders.webp';
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -46,7 +46,7 @@ const Home = () => {
   }
   return (
     <div className='home'>
-        <img src={cc} alt=''/>
+        <img src={cc} alt='' loading='lazy'/>
         <div className='hometext blinking-color right-100 top-100 absolute m-5 pt-5'>
             <h1 className='text-7xl flex flex-wrap font-bold  m-5 pt-5'> 
               <span className="txt-rotate break-words m-5 text-" data-period="1000" data-rotate='[ "Deep Down Into Cosmos of Coding", "Where Learning Begins", "One Stop Solution for Community based learning" ]'>
