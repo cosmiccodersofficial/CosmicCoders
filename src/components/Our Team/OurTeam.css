@@ -13,6 +13,36 @@
     transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
 
+@media screen and (min-width: 768px) {
+        .container {
+            width: 738px;
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        .container {
+            width: 962px;
+        }
+    }
+    
+    @media screen and (min-width: 1280px) {
+        .container {
+            width: 1250px;
+        }
+    }
+    
+    
+    @media screen and (min-width: 1920px) {
+        .container {
+            width: 1890px;
+        }
+    }
+    @media screen and (min-width: 3840px) {
+        .container {
+            width: 3810px;
+        }
+    }
+
 @keyframes fadeIn {
     to {
     opacity: 1;
