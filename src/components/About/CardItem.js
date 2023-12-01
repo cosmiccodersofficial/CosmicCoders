@@ -9,7 +9,7 @@ const CardItem = ({emoji, subheading, text}) => {
             <span className='fw-bold'> {' '}
                 <span className='fs-4'>{emoji}</span> {subheading}
             </span> {' '}
-            {text}
+            <span className='text-wrap'>{text}</span>
         </Card.Text>
   );
 }

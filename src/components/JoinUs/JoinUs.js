@@ -14,7 +14,7 @@ const JoinUs = () => {
     return (
         <div className="container bg-gray-50 p-5 mt-5 mb-4">
             <h2 className="display-2 fw-bold mb-4 mt-5 text-blue-900 contact-heading">Join Our Network</h2>
-            <p className="fs-4 m-4 mb-5">
+            <p className="fs-4 m-4 mb-5 text-wrap">
                 We are more than just a club, we are a launchpad for your journey in the world of computing. Join us today
                 and embark on an exciting adventure of learning, innovation, and growth
             </p>
