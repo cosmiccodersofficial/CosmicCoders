@@ -45,12 +45,12 @@ const OurTeam = () => {
             </Row>
 
             {/* Third Row */}
-            <Row className="mb-4 mx-md-4">
-                <Col className="col-md-4 mb-md-0 mb-4"> </Col>
+            <Row className="mb-4 mx-md-4 justify-content-center">
+                {/* <Col className="col-md-4 mb-md-0 mb-4"> </Col> */}
                 <Col className="col-md-4 mb-md-0 mb-4">
                     <TeamMember name="Priyanka Loura" role="YouTube Partner" linkedin="https://www.linkedin.com/in/priyankaloura/" imageSrc={priyanka}/>
                 </Col>
-                <Col className="col-md-4 mb-md-0 mb-4"> </Col>
+                {/* <Col className="col-md-4 mb-md-0 mb-4"> </Col> */}
             </Row>
         </Container>
     )

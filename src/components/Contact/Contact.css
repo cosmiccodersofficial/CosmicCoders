@@ -27,7 +27,14 @@ body{
     animation: fadeIn 0.9s forwards;
     animation-delay: 0.7s;
 }
+.reset-btn:hover{
+  background-color: rgb(55 65 81);;
+}
 
+.input{
+  font-size: medium;
+  font-weight: 500;
+}
 
 @keyframes slideIn {
     to {

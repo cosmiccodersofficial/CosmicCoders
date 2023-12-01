@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { Card, Row, Col } from 'react-bootstrap';       /*Button*/
+import { Card, Row, Col } from 'react-bootstrap'; 
 import './JoinUs.css';
 
 const JoinUs = () => {
@@ -47,7 +47,7 @@ const JoinUs = () => {
 
                 {/* Second Column */}
                 <Col md={6} className="cursor-pointer mb-4 animate-slide-in-from-right hover">
-                    <Card className="p-4 rounded-4 bg-red-400 mr-3">
+                    <Card className="p-4 rounded-4 bg-red-300 mr-3">
                         <Card.Body className="d-flex justify-content-between align-items-center">
                             <div className="text-start">
                                 <Card.Title className="h3 fw-bold mb-2 text-gray-800">YouTube</Card.Title>
