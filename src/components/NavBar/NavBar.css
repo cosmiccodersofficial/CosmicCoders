@@ -1,42 +1,44 @@
-  .shadow-lg {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
-  
-  .navbar-brand{
-    top: 0;
-    z-index: 10;
-    font-weight: 650;
-    border-radius: 100px;
+.shadow-lg {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 
-    opacity: 0.8;
-    backdrop-filter: blur(64px);
-    transition-property: all;
-  }
-  .navbar-brand:hover{
-    opacity: 1;
-    transition-property: all;
-    transition-duration: 500 smooth;
-  }
+.navbar-brand {
+  top: 0;
+  z-index: 10;
+  font-weight: 650;
+  /* border-radius: 100px; */
 
+  opacity: 0.8;
+  backdrop-filter: blur(64px);
+  transition-property: all;
+}
 
-  .nav-item{
-    opacity: 0.8;
-    backdrop-filter: blur(64px);
-    transition-property: all;
-    border-radius: 100px;
-  }
-  .nav-item:hover{
-    opacity: 1;
-    transition-property: all;
-    transition-duration: 500 smooth;
-  }
-
-  .nav-link:hover{
-    color: rgb(30 58 138);
-  }
+.navbar-brand:hover {
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 500 smooth;
+}
 
 
-.btn:hover{
+.nav-item {
+  opacity: 0.8;
+  backdrop-filter: blur(64px);
+  transition-property: all;
+  border-radius: 100px;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 500 smooth;
+}
+
+.nav-link:hover {
+  color: rgb(30 58 138);
+}
+
+
+.btn:hover {
   background-color: rgb(30 64 175);
 }
 
@@ -48,6 +50,7 @@
   background-color: #333;
   transition: 0.4s;
 }
+
 .navbar-toggler span.close-bar {
   display: block;
   width: 30px;
@@ -75,5 +78,13 @@
 
   .navbar-toggle {
     display: block;
+  }
+}
+.brand{
+  padding: 15px;
+}
+@media (min-width: 374px) and (max-width: 767px){
+  .brand{
+    padding: 10px;
   }
 }

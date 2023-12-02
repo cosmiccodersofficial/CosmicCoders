@@ -1,7 +1,6 @@
 .hometext{
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 100%;
 }
 
@@ -44,3 +43,33 @@ img{
 
 
 /* rgb(253 186 116); */
+
+.home-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-background {
+  object-fit: cover;
+  height: 1028px;
+}
+
+.txt-rotate {
+  display: inline-block;
+}
+
+
+.partner-image {
+  width: 400px;
+  height: 250px;
+  margin-left: 20px;
+}
+
+
+@media (min-width: 374px) and (max-width: 767px){
+  .partner-image{
+    width: 250px;
+    height: 150px;
+  }
+  
+}
