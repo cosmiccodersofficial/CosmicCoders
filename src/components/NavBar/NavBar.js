@@ -26,7 +26,7 @@ const NavBar = () => {
     <div className={`${visible ? 'block' : 'd-none'}`}>
       <Navbar expanded={expanded} className={`fixed-top w-100 top-0 z-10 navbar`} expand="lg">
         <Container className='d-flex justify-content-between align-items-center mx-8 py-2'>
-          <Navbar.Brand as={Link} to="/" className="rounded-5 cursor-pointer text-start shadow bg-gray-400 p-3 text-gray-900 navbar-brand">
+          <Navbar.Brand as={Link} to="/" className="brand rounded-5 cursor-pointer text-start shadow bg-gray-400 text-gray-900 navbar-brand">
             <span className='text-blue-900'>Cosmic</span> Coders
           </Navbar.Brand>
           <Navbar.Toggle className={`border-3 bg-transparent p-2 navbar-toggler`} aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}>
