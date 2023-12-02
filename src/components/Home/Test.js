@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Image } from 'react-bootstrap';
 import cc from '../../images/Cosmic Coders.webp';
-import Newton from '../../images/Newton.jpg';
+import Newton from '../../images/Newton.webp';
 import './Home.css';
 
 const Home = () => {
@@ -61,13 +61,13 @@ const Home = () => {
             </div>
             <section className="partners-section bg-gray-50">
                 <Container>
-                    <h2 className="display-2 text-blue-900 fw-bold mt-4">Our Partners</h2>
+                    <h2 className="fs-1 text-blue-900 fw-bold mt-4">Our Partners</h2>
                     <marquee behavior="scroll" direction="right" className="marquee-container mb-4 mt-4" scrollamount="13">
                         {partners.map((partner, index) => (
-                            <Image key={index} src={partner} alt={`Partner ${index + 1}`} className="partner-image rounded-5" />
+                            <Image key={index} src={partner} alt={`Partner ${index + 1}`} className="partner-image rounded-4" />
                         ))}
                     </marquee>
-                    <p className='fw-semibold fs-4'>and many more to come</p>
+                    <p className='fw-semibold fs-4 text-muted '>and many more to come</p>
                 </Container>
             </section>
         </Container>
