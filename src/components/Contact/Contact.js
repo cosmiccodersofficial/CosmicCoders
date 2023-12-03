@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Form, Button, Container} from 'react-bootstrap';
+import { Form, Button, Container, Spinner, Alert} from 'react-bootstrap';
 
 import './Contact.css';
 import ContactField from './ContactField';
@@ -7,17 +7,18 @@ import ContactField from './ContactField';
 const Contact = () => {
 
   const form = useRef();
-
+  const [sending, setSending] = useState(false);
+  const[alert, setAlert] =  useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
+    setTimeout(()=>{
+      setAlert(false);
+    }, 1500);
+
+  }, [alert]);
+
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '',});
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -29,8 +30,8 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     try {
+      setSending(true);
       const response = await fetch('https://email-backend-service-q6t4.onrender.com/send-email', {
         method: 'POST',
         headers: {
@@ -40,6 +41,8 @@ const Contact = () => {
       });
 
       if (response.ok) {
+        setSending(false);
+        setAlert(true);
         form.current.reset();
         console.log('Email sent successfully');
       } else {
@@ -54,6 +57,11 @@ const Contact = () => {
     <Container className="bg-light p-4 d-flex flex-column  align-items-center contact-container my-5">
       <span className="mt-5 pt-3 fw-bold text-blue-800 contact-heading">Let's Have a Talk</span>
       <span className='fw-medium text-muted fs-5 d-flex text-wrap mb-5 pb-3'>Our door is always open for a good cup of coffee</span>
+      {alert && <Alert variant="success">Thanks for Contacting Us !!</Alert>}
+      <div>
+        {sending && <Spinner className='text-center my-5' animation="border" variant="primary"/>}
+      </div>
+      { !sending &&
       <Form ref={form} className="max-w-sm d-flex flex-column" onSubmit={handleSubmit}>
         {/* Name */}
         <ContactField controlId = "formName" label = "Name" name="name" type = "text" placeholder = "Your Name" onChange={handleChange}/>
@@ -69,6 +77,7 @@ const Contact = () => {
           <Button variant="secondary" type="reset" className="w-100 bg-gray-600 rounded-4 reset-btn">Reset</Button>
         </div>
       </Form>
+    }
     </Container>
   );
 };
