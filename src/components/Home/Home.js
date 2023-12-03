@@ -51,7 +51,7 @@ const Home = () => {
 
     return (
         <Container fluid className="home-container p-0">
-            <Image src={cc} alt="Background" fluid className="home-background" loading="lazy" />
+            <Image src={cc} alt="Background" fluid className="home-background"/>
             <div className="blinking-color position-absolute hometext translate-middle text-center">
                 <h1 className="display-2 fw-bold flex flex-wrap m-5 pt-5">
                     <span className="txt-rotate break-words m-5 text-" data-period="1000" data-rotate='[ "Deep Down Into Cosmos of Coding", "Where Learning Begins", "One Stop Solution for Community based learning" ]'>
