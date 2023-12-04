@@ -4,7 +4,7 @@ import cc from '../../images/Cosmic Coders.webp';
 import Newton from '../../images/Newton.webp';
 import './Home.css';
 
-const Home = () => {
+const Home = () => React.memo(()=> { 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -64,16 +64,16 @@ const Home = () => {
                     <h2 className="fs-1 text-blue-900 fw-bold mt-4">Our Partners</h2>
                      {/* eslint-disable-next-line */}
                     <marquee behavior="scroll" direction="right" className="marquee-container mb-4 mt-4" scrollamount="13">
-                        {partners.map((partner, index) => (
+                        {partners.map((partner, index) => 
                             <Image key={index} src={partner} alt={`Partner ${index + 1}`} className="partner-image rounded-4" />
-                        ))}
+                        )}
                     </marquee>
                     <p className='fw-semibold fs-4 text-muted '>and many more to come</p>
                 </Container>
             </section>
         </Container>
     );
-};
+});
 
 export default Home;
 
