@@ -4,7 +4,7 @@ import cc from '../../images/Cosmic Coders.webp';
 import Newton from '../../images/Newton.webp';
 import './Home.css';
 
-const Home = () => React.memo(()=> { 
+const Home = React.memo(()=> { 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
